@@ -16,11 +16,13 @@ class ProductController extends Controller
 
     public function Stores(Request $request){
 
-       $producto = new Product();
-       $producto->name=$request->name;  
-       $producto->price=$request->price;
-       $producto->save();
-       return $producto;
+      $num1 = $request ->num1;
+      $num2 = $request ->num2;
+      $num3 = $request ->num3;
+
+      $prom = $num1+$num2+$num3/3;
+
+      return "El promedio de las notas es ".$prom;
 
 
     }

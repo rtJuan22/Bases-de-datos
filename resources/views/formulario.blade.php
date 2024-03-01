@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+   
 <h1>Formulario</h1>
 
 <form action="{{route('product.store')}}" method="POST" enctype="multipart/form-data">
@@ -14,21 +14,25 @@
 @csrf
 
 <label>
-    Ingrese el nombre del producto:
+    Ingrese la nota 1:
     <br>
-    <input type="text" name="name">
+    <input type="text" name="num1">
+</label>
+<br><br>
+<label>
+    Ingrese la nota 2: :
+    <br>
+    <input type="number" name="num2">
+    <br>
 </label>
 <br>
-
 <label>
-    Ingrese el precio del producto: 
+    Ingrese la nota 3: :
     <br>
-    <input type="number" name="price">
+    <input type="number" name="num3">
 </label>
-
 <br><br>
-
-<button type="submit">Enviar:</button>
+<button type="submit">Enviar Formulario:</button>
 </form>
 
 </body>
